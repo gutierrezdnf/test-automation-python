@@ -27,6 +27,7 @@ jobs:
       - name: Setup pipenv
         run: |
           pip install pipenv
+          pipenv shell
           pipenv install
 
       - name: Lint
