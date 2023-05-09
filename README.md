@@ -1,6 +1,8 @@
 # Test Automation Python
 
-This is a template for a Test Framework using Python, pytest and Selenium WebDriver.
+[![GitHub Actions status](https://github.com/gutierrezdnf/test-automation-python/actions/workflows/checks.yml/badge.svg)](https://github.com/gutierrezdnf/test-automation-python/actions)
+
+This project is a template for a Test Framework using Python, pytest and Selenium WebDriver.
 
 **Instructions:**
 
@@ -25,6 +27,7 @@ $ pipenv install --dev --python 3.11
 # Run the tests
 $ pytest --gui --browser=chrome  # Available browser options: (chrome | firefox | edge)
 ~~~
+#
 
 <a href="#">
     <img align="left" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Python" width="30px">
