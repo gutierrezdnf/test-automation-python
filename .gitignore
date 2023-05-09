@@ -1,0 +1,13 @@
+# Python cache
+__pycache__
+.pytest_cache
+*.log
+
+# Virtual envs
+.env
+.venv
+env
+venv
+
+# IDEs
+.idea

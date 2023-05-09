@@ -1,0 +1,41 @@
+---
+name: Test Automation Python
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: ["chrome", "firefox", "edge"]
+
+    steps:
+      - name: Setup ${{ matrix.browser }}
+        uses: browser-actions/setup-${{ matrix.browser }}@v1
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+          cache: pipenv
+
+      - name: Setup pipenv
+        run: |
+          pip install pipenv
+          pipenv install
+
+      - name: Lint
+        run: pipenv run pylint **/*.py
+
+      - name: Test
+        run: pipenv run pytest --browser=${{ matrix.browser }} --html=reports/index.html
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: reports
+          path: reports

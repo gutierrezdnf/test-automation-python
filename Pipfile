@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+faker = ">=18.7.0,<18.8"
+pytest = ">=7.3.1,<7.4"
+pytest-base-url = ">=2.0.0,<2.1"
+pytest-html = ">=3.2.0,<3.3"
+selenium = ">=4.9.1,<4.10"
+
+[dev-packages]
+pylint = ">=2.17.4,<2.18"
+pylint-pytest = ">=1.1.2,<1.2"
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.3"
