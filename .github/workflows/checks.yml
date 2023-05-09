@@ -34,7 +34,7 @@ jobs:
         run: pipenv run pylint **/*.py
 
       - name: Test
-        run: pipenv run pytest --browser=${{ matrix.browser }} --html=reports/index.html
+        run: pipenv run pytest --browser=${{ matrix.browser }} --html=reports/index.html --screenshots
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
