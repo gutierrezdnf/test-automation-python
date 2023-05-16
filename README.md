@@ -27,11 +27,3 @@ $ pipenv install --dev --python 3.11
 # Run the tests
 $ pytest --gui --browser=chrome  # Available browser options: (chrome | firefox | edge)
 ~~~
-#
-
-<a href="#">
-    <img align="left" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Python" width="30px">
-    <img align="left" src="https://github.com/devicons/devicon/blob/master/icons/pytest/pytest-original.svg" alt="pytest" width="30px">
-    <img align="left" src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium" width="30px">
-    <img align="left" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" alt="GitHub Actions" width="30px">
-</a>
